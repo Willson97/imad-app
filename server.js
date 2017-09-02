@@ -83,17 +83,13 @@ return htmlTemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/articleone',function(req,res){
-     res.send(createTemplate(articleone));
+app.get('/:articleName',function(req,res){
+    //articleName=article-one;
+    //articles[articleName]=={} content object for article one
+    var arctileName=req.params.articleName;
+     res.send(createTemplate(articles[articleName]));
 });
 
-app.get('/articletwo',function(req,res){
-    res.send('article two will be served here');
-});
-
-app.get('/articlethree',function(req,res){
-    res.send('article three will be served here');
-});
 
 
 
