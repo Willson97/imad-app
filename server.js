@@ -27,7 +27,7 @@ app.use(morgan('combined'));
  <!DOCTYPE html>
 <html>
 <head>
-   /* <title>Arcticle One |willson|hasura</title>*/
+   
    ${title}
      <link href="/ui/style.css" rel="stylesheet" />
     
@@ -37,7 +37,7 @@ app.use(morgan('combined'));
             <a href="/">Home</a>
         </div>
         <hr/>
-        /*<h3>Article One</h3>*/
+        
         ${heading}
         <div>
             ${date}
