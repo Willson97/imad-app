@@ -44,17 +44,9 @@ app.use(morgan('combined'));
         </div>
         <div  class="container">
            ${content}
-            
-        </div>
-        
-        
-        
+         </div>
     </body>
-    
-    
-    
 </html>
-
 `;
 return htmlTemplate;
      
