@@ -4,7 +4,8 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
- var articleone={
+var articles={
+   var articleone: {
      title:'Article One|Willson Verma',
      heading:'Article One',
      date:'sep5 2017',
@@ -17,7 +18,32 @@ app.use(morgan('combined'));
             </p>`
             
      
- };
+ },
+   var arctiletwo:{
+     title:'Article Two|Willson Verma',
+     heading:'Article Two',
+     date:'sep3 2017',
+     content:` <p>
+                hi this is content. hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is contentv
+            </p>
+            <p> hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content
+            </p>
+            <p> hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content
+            </p>`
+            },
+   var arctilethree:{ title:'Article Three|Willson Verma',
+     heading:'Article Three',
+     date:'sep3 2017',
+     content:` <p>
+                hi this is content. hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is contentv
+            </p>
+            <p> hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content
+            </p>
+            <p> hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content hi this is content
+            </p>`
+            },
+ }
+ 
  function createTemplate(data){
      var title=data.title;
      var date=data.date;
